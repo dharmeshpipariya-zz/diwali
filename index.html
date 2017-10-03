@@ -16,7 +16,7 @@
     html, body { height: 100%; margin: 0; padding: 0; }
     img { border: 0; }
     body { background-color: #f8891e; color: #999; font: 100%/18px helvetica, arial, sans-serif; }
-    .page-loader { position: fixed; top: 0; right: 0; bottom: 0; left: 0; background: white; z-index: 111; }
+    .page-loader { position: fixed; top: 0; right: 0; bottom: 0; left: 0; background: white; z-index: 112; }
     .loader { border: 5px solid #f3f3f3; animation: spin 1s linear infinite; border-top: 5px solid #555; border-radius: 50%; width: 50px; height: 50px; position: absolute; top: 50%; left: 50%; margin: -5px; }
     canvas { position: absolute; top: 0; left: 0; display: block; cursor: crosshair; z-index: 20; }
     #bg { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: -1; }
@@ -25,10 +25,11 @@
     .card-title { font-size: 40px; line-height: 48px; }
     .wishesed { font-size: 36px; line-height: 48px; color: #ffff00; }
     .festival { font-variant: small-caps; text-shadow: 0 1px 0 #999999, 0 2px 0 #888888, 0 3px 0 #777777, 0 4px 0 #666666, 0 5px 0 #555555, 0 6px 0 #444444, 0 7px 0 #333333, 0 8px 7px rgba(0, 0, 0, 0.4), 0 9px 10px rgba(0, 0, 0, 0.2); font-size: 45px; line-height: 1.2; }
-    .form-name { position: fixed; right: 0; bottom: 0; left: 0; padding: 8px 16px; text-align: center; font-size: 1rem; box-sizing: border-box; z-index: 111; }
+    .form-name { position: fixed; right: 0; bottom: 32px; left: 0; padding: 0 16px; text-align: center; font-size: 1rem; box-sizing: border-box; z-index: 111; }
     .form-input { width: 70%; height: 40px; border-radius: 50px; color: white; text-align: center; border: 0; background-color: #26a69a; }
     .btn-go { width: 25%; height: 40px; border-radius: 50px; color: white; border: 0; vertical-align: top; line-height: 40px; background-color: #26a69a; }
     .btn-go img { width: 20px; vertical-align: text-bottom; }
+    .btn-share { display: none; width: 100%; height: 40px; border-radius: 50px; color: white; border: 0; vertical-align: top; line-height: 40px; background-color: #34af23; text-decoration: none; }
     .pulse { animation-duration: 1s; animation-fill-mode: both; animation-timing-function: linear; animation-iteration-count: infinite; animation-name: pulse; }
     .footer { position: absolute; bottom: 8px; width: 100%; text-align: center; color: white; }
 
@@ -67,13 +68,16 @@
     <span style="color:red;">❤</span>
     by Dharmesh Pipariya
   </a>
-  <!--<div class="form-name">
+  <div class="form-name">
     <input class="form-input" type="text" required maxlength="25" name="n" placeholder="👉 Enter Your Name Here" />
-    <button class="btn-go" type="submit">
+    <button class="btn-go" type="button">
       Go
       <img id="whatsappicon" src="img/smily.svg" />
     </button>
-  </div>-->
+    <a class="btn-share" href="whatsapp://send?text=सबसे पहले *Dharmesh Pipariya* का धमाका %0Aदेखे 👉 https://dharmeshpipariya.github.io/diwali/?n=Dharmesh-Pipariya">
+      <img id="whatsappicon" width="20" src="img/wtsp.svg" /> SHARE ON WHATSAPP <img id="whatsappicon" width="20" src="img/wtsp.svg" />
+    </a>
+  </div>
   <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
   <script src="js/script.js"></script>
 </body>

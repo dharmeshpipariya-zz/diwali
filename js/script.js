@@ -1,4 +1,26 @@
-$(function () {
+﻿$(document).ready(function () {
+  function GetParameterValues(param) {
+    var url = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for (var i = 0; i < url.length; i++) {
+      var urlparam = url[i].split('=');
+      if (urlparam[0] == param) {
+        return urlparam[1].replace('-', ' ');
+      }
+    }
+  }
+
+  var name = GetParameterValues('n');
+  $('#name').html(name);
+  $('.page-loader').hide();
+  $('.btn-go').click(function (event) {
+    var name = $('.form-input').val();
+    if (name) {
+      var url = 'whatsapp://send?text=सबसे पहले *' + name + '* का धमाका %0Aदेखे 👉 https://dharmeshpipariya.github.io/diwali/?n=' + name.replace(' ', '-');
+      $('.btn-share').attr('href', url).css('display','block');
+      $('.btn-go').hide();
+      $('.form-input').hide();
+    } else { alert('Please Enter Your Name'); }
+  });
 
   var Fireworks = function () {
     var self = this;
@@ -313,18 +335,4 @@ $(function () {
     $('#info-inner').stop(false, true).slideToggle(100);
     e.preventDefault();
   });
-
-  function GetParameterValues(param) {
-    var url = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-    for (var i = 0; i < url.length; i++) {
-      var urlparam = url[i].split('=');
-      if (urlparam[0] == param) {
-        return urlparam[1].replace('-', ' ');
-      }
-    }
-  }
-
-  var name = GetParameterValues('n');
-  $('#name').html(name);
-  $('.page-loader').hide();
 });
