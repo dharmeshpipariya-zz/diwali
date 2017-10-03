@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="">
+  <meta name="author" content="Dharmesh Pipariya">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Happy Diwali to you and your family from Dharmesh Pipariya Creative Designer from Baroda, India</title>
+  <style type="text/css">
+    html, body { height: 100%; margin: 0; padding: 0; }
+    img { border: 0; }
+    body { background-color: #f8891e; color: #999; font: 100%/18px helvetica, arial, sans-serif; }
+    .page-loader { position: fixed; top: 0; right: 0; bottom: 0; left: 0; background: white; z-index: 111; }
+    .loader { border: 5px solid #f3f3f3; animation: spin 1s linear infinite; border-top: 5px solid #555; border-radius: 50%; width: 50px; height: 50px; position: absolute; top: 50%; left: 50%; margin: -5px; }
+    canvas { position: absolute; top: 0; left: 0; display: block; cursor: crosshair; z-index: 20; }
+    #bg { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: -1; }
+    #bg img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .card-content { overflow: hidden; color: white; text-align: center; z-index: 111; font-family: Segoe Script; }
+    .card-title { font-size: 40px; line-height: 48px; }
+    .wishesed { font-size: 36px; line-height: 48px; color: #ffff00; }
+    .festival { font-variant: small-caps; text-shadow: 0 1px 0 #999999, 0 2px 0 #888888, 0 3px 0 #777777, 0 4px 0 #666666, 0 5px 0 #555555, 0 6px 0 #444444, 0 7px 0 #333333, 0 8px 7px rgba(0, 0, 0, 0.4), 0 9px 10px rgba(0, 0, 0, 0.2); font-size: 45px; line-height: 1.2; }
+    .form-name { position: fixed; right: 0; bottom: 0; left: 0; padding: 8px 16px; text-align: center; font-size: 1rem; box-sizing: border-box; z-index: 111; }
+    .form-input { width: 70%; height: 40px; border-radius: 50px; color: white; text-align: center; border: 0; background-color: #26a69a; }
+    .btn-go { width: 25%; height: 40px; border-radius: 50px; color: white; border: 0; vertical-align: top; line-height: 40px; background-color: #26a69a; }
+    .btn-go img { width: 20px; vertical-align: text-bottom; }
+    .pulse { animation-duration: 1s; animation-fill-mode: both; animation-timing-function: linear; animation-iteration-count: infinite; animation-name: pulse; }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107344411-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments) };
+    gtag('js', new Date());
+
+    gtag('config', 'UA-107344411-1');
+  </script>
+</head>
+<body>
+  <div class="page-loader">
+    <div class="loader"></div>
+  </div>
+  <div id="bg"><img id="bgimg" src="img/bg1.jpg" /></div>
+  <div class="card-content">
+    <p id="name" class="pulse card-title">Dharmesh Pipariya</p>
+    <p class="wishesed">WishingYou</p>
+    <h2 class="festival">Happy Diwali</h2>
+  </div>
+  <a href="">Love By - Dharmesh Pipariya</a>
+  <!--<div class="form-name">
+    <input class="form-input" type="text" required maxlength="25" name="n" placeholder="👉 Enter Your Name Here" />
+    <button class="btn-go" type="submit">
+      Go
+      <img id="whatsappicon" src="img/smily.svg" />
+    </button>
+  </div>-->
+  <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
